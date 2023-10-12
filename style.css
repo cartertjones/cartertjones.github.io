@@ -87,6 +87,12 @@ section{
   height: 100%;
   z-index: -1; /* This layer should be behind the content */
 }
+
+@media (hover: none) {
+  .background-image {
+    background-attachment: initial;
+  }
+}
 .content{
   position: relative;
   z-index: 1;
