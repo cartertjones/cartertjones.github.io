@@ -99,13 +99,17 @@ section{
   }
   
 .square-button {
-  width: 50px; /* Set the width and height to create a square button */
-  height: 50px;
+  width: 100px; /* Set the width and height to create a square button */
+  height: 100px;
 }
 
 .rounded-box{
   background-color: rgba(0.9686, 0.9686, 0.9686, 0.8);
   border-radius: 40px;
+}
+
+iframe {
+  border-radius: 10px;
 }
 
 .show-border{
@@ -122,6 +126,10 @@ section{
 
 .img-container img{
   border-radius: 10px;
+}
+
+.fa{
+  z-index: 2;
 }
 
 
