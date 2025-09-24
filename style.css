@@ -83,13 +83,13 @@ iframe{
 .btn.side-button {
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
-    background-color: #00e0aa;
+    background-color: #00a57f;
 
     color: #fff;
 }
 
 .btn.side-button:hover {
-    background-color: #00ab83;
+    background-color: #007a5d;
 }
 
 .slide {

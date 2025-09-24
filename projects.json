@@ -1,0 +1,24 @@
+[
+  {
+    "id": "poor-dan",
+    "title": "Poor Dan is in a Droop",
+    "subtitle": "Digital Comic | May 2023",
+    "roles": "Project organizer | Lead Developer | Minigame Designer",
+    "stack": ["unity", "csharp", "photoshop", "trello"],
+    "overview": "Poor Dan is in a Droop is a semester-long collaboration between 5 people, having 3 main artists and 2 main developers. We were assigned an unproven topic within quantum physics to attempt to convey through interactivity and visuals. This comic portrays the bi-directional flow of time through the life story of Dan and his mental-health struggles.",
+    "contributors": ["Tyler Sorensen", "Patrick Olson", "Austin Schuette", "James Lee"],
+    "media": "https://www.youtube.com/embed/DCymmnwzaIw",
+    "repo": "https://github.com/cartertjones/PDIIAD"
+  },
+  {
+    "id": "abc-stories",
+    "title": "ABC Stories",
+    "subtitle": "Educational iOS AR App Overhaul | May 2024",
+    "roles": "Swift Developer | Data Management",
+    "stack": ["swift", "figma"],
+    "overview": "As a GIMM Research Developer, I collaborated with colleagues to overhaul an AR app designed to teach young children letter writing...",
+    "contributors": ["Mae Bridgeman", "Kaj Forney", "Chase Franklin", "Carter Jones", "Mitchell Oliarny", "Jayden Quallio", "Carson Strout"],
+    "media": "img/media-placeholder.png",
+    "repo": "https://github.com/GIMMPeer/ABC-Go-AR"
+  }
+]
