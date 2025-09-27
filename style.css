@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 body{
     background-color: transparent !important;
 
@@ -7,6 +9,7 @@ body{
     background-attachment: fixed;
 
     color: #fff !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .content{
@@ -17,7 +20,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 
-    padding: 6rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .background-box{
@@ -28,6 +31,16 @@ body{
 .headline{
     font-size: 1.8rem !important;
     text-align: center;
+}
+
+.logo{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.logo.large{
+    font-size: 14rem !important;
 }
 
 p {
@@ -61,6 +74,17 @@ iframe{
     height: 170px;
 }
 
+
+
+#landing {
+    min-height: 100vh;            /* fill screen */
+    display: flex;                /* enable flexbox */
+    flex-direction: column;       /* stack logo + headline vertically */
+    justify-content: center;      /* vertical centering */
+    align-items: center;          /* horizontal centering */
+    padding-top: 60px;            /* compensate for fixed navbar height */
+}
+
 #headshot {
     max-width: 600px;
     max-height: 600px;
@@ -69,10 +93,21 @@ iframe{
     height: auto;
 }
 
+.btn.splash-button {
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0);
+    color: rgba(255, 255, 255, .6);
+    padding: 0.5rem 1.5rem;
+}
+.btn.splash-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
 .btn.main-button {
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     background-color: #0191b3;
+
     color: #fff;
 }
 
@@ -86,6 +121,11 @@ iframe{
     background-color: #00a57f;
 
     color: #fff;
+}
+
+.btn.bold {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .btn.side-button:hover {
@@ -108,9 +148,6 @@ iframe{
     color: #aaa !important;
 }
 
-.fa{
-    color: #fff !important;
-}
 .carousel-indicators {
     bottom: -5px !important;
 }
@@ -258,5 +295,10 @@ iframe{
     }
     .project-header{
         padding-bottom: 0;
+    }
+
+    #landing {
+        min-height: 100vh;
+        align-items: center;
     }
 }
