@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -22,7 +24,18 @@
     </nav>
 
     <div class="content">
-        <div class="container mt-5 pt-5">
+        <div class="container">
+            <div class="d-flex align-items-center mb-3">
+                <!-- <a href="index.html#projects" class="btn side-button me-3">
+                    <i class="fa fa-arrow-left me-2"></i>Back to projects
+                </a> -->
+                <h1 id="title" class="mb-0"></h1>
+            </div>
+            <h4 id="subtitle" class="subheader mb-4"></h4>
+            <div id="media" class="mb-4"></div>
+
+            <hr class="sub-hr" />
+
             <!-- Header -->
             <h1 id="title"></h1>
             <h4 id="subtitle" class="subheader mb-4"></h4>
@@ -37,7 +50,7 @@
             <!-- Contributions -->
             <section id="contributions-section" class="mb-5 d-none">
                 <h2>My Contributions</h2>
-                <p id="contributions"></p>
+                <div id="contributions"></div>
             </section>
 
             <!-- Tech Stack -->
@@ -49,7 +62,7 @@
             <!-- Challenges -->
             <section id="challenges-section" class="mb-5 d-none">
                 <h2>Challenges & Takeaways</h2>
-                <p id="challenges"></p>
+                <div id="challenges"></div>
             </section>
 
             <!-- Contributors -->
@@ -60,11 +73,11 @@
 
             <!-- Links -->
             <div class="mt-4">
-                <a id="repo" class="btn main-button me-3 disabled" target="_blank">
-                    <i class="fa fa-code-branch me-2"></i>Repository
-                </a>
                 <a href="index.html#projects" class="btn side-button">
                     <i class="fa fa-arrow-left me-2"></i>Back to Projects
+                </a>
+                <a id="repo" class="btn main-button me-3 disabled" target="_blank">
+                    <i class="fa fa-code-branch me-2"></i>Repository
                 </a>
             </div>
         </div>
@@ -86,7 +99,7 @@
                 }
 
                 // Header
-                document.getElementById("title").textContent = proj.title;
+                document.getElementById("title").textContent = proj.title + " - Breakdown";
                 document.getElementById("subtitle").textContent = proj.subtitle || "";
 
                 // Media
@@ -103,15 +116,37 @@
                     document.getElementById("overview-section").classList.remove("d-none");
                 }
 
-                // Contributions
-                if (proj.contributions && proj.contributions.trim() !== "") {
-                    document.getElementById("contributions").textContent = proj.contributions;
+                // Contributions (string or array)
+                if (proj.contributions) {
+                    const contribDiv = document.getElementById("contributions");
+                    if (Array.isArray(proj.contributions)) {
+                        const ul = document.createElement("ul");
+                        proj.contributions.forEach(item => {
+                            const li = document.createElement("li");
+                            li.textContent = item;
+                            ul.appendChild(li);
+                        });
+                        contribDiv.appendChild(ul);
+                    } else {
+                        contribDiv.textContent = proj.contributions;
+                    }
                     document.getElementById("contributions-section").classList.remove("d-none");
                 }
 
-                // Challenges
-                if (proj.challenges && proj.challenges.trim() !== "") {
-                    document.getElementById("challenges").textContent = proj.challenges;
+                // Challenges (string or array)
+                if (proj.challenges) {
+                    const challengesDiv = document.getElementById("challenges");
+                    if (Array.isArray(proj.challenges)) {
+                        const ul = document.createElement("ul");
+                        proj.challenges.forEach(item => {
+                            const li = document.createElement("li");
+                            li.textContent = item;
+                            ul.appendChild(li);
+                        });
+                        challengesDiv.appendChild(ul);
+                    } else {
+                        challengesDiv.textContent = proj.challenges;
+                    }
                     document.getElementById("challenges-section").classList.remove("d-none");
                 }
 

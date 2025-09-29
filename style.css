@@ -46,8 +46,18 @@ body{
 p {
     font-size: 0.9rem !important;
 }
+
+p.caption {
+    font-size:0.9rem !important;
+    color: #ddd;
+}
+
 .highlight{
     color: #ff895b;
+}
+
+.highlight.blue{
+    color: #01c5f1;
 }
 
 .main-hr{
@@ -96,7 +106,7 @@ iframe{
 .btn.splash-button {
     font-size: 1.5rem;
     background-color: rgba(0,0,0,0);
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
     padding: 0.5rem 1.5rem;
 }
 .btn.splash-button:hover {
@@ -123,9 +133,11 @@ iframe{
     color: #fff;
 }
 
-.btn.bold {
-    font-size: 2rem;
-    font-weight: bold;
+.btn.side-button.active {
+    background-color: #00a57f;
+}
+.btn.side-button.inactive {
+    background-color: #007a5d;
 }
 
 .btn.side-button:hover {
@@ -163,84 +175,59 @@ iframe{
     padding-bottom: 1rem;
 }
 
-/* Base table styling */
-.table {
-    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent like .content */
-    color: #fff; /* white text */
-    border-radius: 1rem;
-    overflow: hidden; /* clip rounded corners */
-    margin: 2rem 0;
+/* Smooth hover fades */
+.btn.splash-button,
+.btn.main-button,
+.btn.side-button {
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
-/* Header row */
-.table thead th {
-    background-color: #0191b3; /* main brand teal */
+.btn.fade-hover:hover {
+  opacity: 0.85;
+}
+
+/* Fade in landing on load */
+#landing {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#landing.visible {
+  opacity: 1;
+}
+
+/* Force landing buttons + dividers into one row */
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;  /* don’t wrap on small screens */
+  gap: 0.5rem;
+}
+.landing-buttons .vr {
+  height: 2rem;
+}
+
+/* Base style for toggle buttons */
+#toggle-previous,
+#toggle-current {
+    background-color: rgba(0,0,0,0.3);
     color: #fff;
-    font-weight: 600;
-    border: none;
-    text-align: center;
-    vertical-align: middle;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none !important; 
+    box-shadow: none !important;
 }
 
-/* Body rows */
-.table tbody tr {
-    transition: background-color 0.3s ease;
+/* Hover effect for both */
+#toggle-previous:hover,
+#toggle-current:hover {
+    background-color: rgba(1,145,179,0.5); /* subtle teal highlight */
 }
 
-.table tbody tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.05); /* subtle zebra striping */
-}
-
-.table tbody tr:hover {
-    background-color: rgba(1, 145, 179, 0.3); /* teal hover */
-}
-
-/* Cells */
-.table td, 
-.table th {
-    border: none;
-    padding: 1rem;
-    vertical-align: middle;
-}
-
-/* Highlighted / active row */
-.table tbody tr.table-active {
-    background-color: rgba(255, 137, 91, 0.3); /* brand highlight orange */
-}
-
-/* Bordered variant */
-.table-bordered {
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-.table-bordered td, 
-.table-bordered th {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Striped variant (enhanced contrast) */
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(255, 255, 255, 0.03);
-}
-
-/* Responsive table wrapper */
-.table-responsive {
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-/* Small text option */
-.table-sm td, 
-.table-sm th {
-    padding: 0.5rem;
-}
-
-/* Optional caption styling */
-.table caption {
-    caption-side: top;
-    color: #aaa;
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0.5rem;
+/* Active button styling */
+#toggle-previous.active,
+#toggle-current.active {
+    background-color: #0191b3; /* brand teal */
+    color: #fff;
 }
 
 /* For desktop */
