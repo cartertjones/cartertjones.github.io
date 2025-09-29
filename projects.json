@@ -1,0 +1,324 @@
+[
+  {
+    "id": "poor-dan",
+    "title": "Poor Dan is in a Droop",
+    "subtitle": "Digital Comic | May 2023",
+    "roles": "Project Lead | Developer | Minigame Designer",
+    "stack": [
+      "unity",
+      "csharp",
+      "photoshop",
+      "trello"
+    ],
+    "overview": "Poor Dan is in a Droop is a semester-long collaborative project exploring complex concepts in quantum physics through interactive storytelling. Our team of five—including three artists and two developers—created a digital comic that visualizes the bi-directional flow of time via Dan’s life story and mental-health journey. The project challenged us to convey abstract ideas clearly while integrating interactivity, mini-games, and visually compelling animations. For me, this was an early exploration in game development, where I applied object-oriented programming principles to manage game systems and mechanics effectively.",
+    "contributions": [
+      "Led development and organized project workflow for a team of five.",
+      "Designed and implemented interactive mini-games using Unity and C#, applying object-oriented programming principles to structure game mechanics efficiently.",
+      "Coordinated with artists to integrate visuals and narrative elements seamlessly into the interactive comic."
+    ],
+    "challenges": [
+      "Learned to balance narrative clarity with technical constraints, honing project scope management skills.",
+      "Explored object-oriented programming in a hands-on context, gaining foundational experience in structuring game logic, managing game objects, and handling interactive systems.",
+      "Navigated the complexities of combining storytelling with interactive gameplay, strengthening problem-solving and collaboration abilities."
+    ],
+    "contributors": [
+      "Tyler Sorensen",
+      "Patrick Olson",
+      "Austin Schuette",
+      "James Lee"
+    ],
+    "media": "https://www.youtube.com/embed/DCymmnwzaIw",
+    "mediaCaption": "Demo Video of Poor Dan is in a Droop",
+    "repo": "https://github.com/cartertjones/PDIIAD",
+    "genre": "2D | Interactive Comic",
+    "client": "GIMM 250",
+    "current": false,
+    "showBreakdown": true
+  },
+  {
+    "id": "geoscience-exhibit",
+    "title": "Geoscience Exhibit",
+    "subtitle": "3D Exhibit for Android | February 2024",
+    "roles": "C# Developer | UI Designer",
+    "stack": [
+      "unity",
+      "csharp",
+      "photoshop",
+      "blender",
+      "trello"
+    ],
+    "overview": "Developed a Unity-based Android application for the 2024 Personal Structures Exhibition in Venice, Italy. The exhibit presents 3D geological drone data from Boise State University's Human-Environment Systems department, allowing users to explore the environment and learn about invasive plant species in Idaho. Features include immersive navigation, gyroscopic camera controls, and a seasonal slider showing environmental changes throughout the year.",
+    "contributions": [
+      "Assisted with implementing core C# functionality",
+      "Designed UX interactions for navigation and environmental sliders",
+      "Optimized the game loop for quick playthroughs for exhibitors"
+    ],
+    "challenges": [
+      "Converting raw drone point cloud data into an optimized 3D model using Blender",
+      "Developing shaders for smooth seasonal transitions",
+      "Balancing performance and usability for a public exhibit environment"
+    ],
+    "contributors": [
+      "Mae Bridgeman",
+      "Kaj Forney",
+      "Chase Franklin",
+      "Carter Jones",
+      "Mitchell Oliarny",
+      "Jayden Quallio",
+      "Carson Strout"
+    ],
+    "media": "img/geoscience-exhibit.png",
+    "mediaCaption": "In-experience view of the Geoscience Exhibit",
+    "repo": "https://github.com/cartertjones/geoscience-exhibit",
+    "genre": "3D | Interactive Exhibit",
+    "client": "Boise State University",
+    "current": false,
+    "showBreakdown": true
+  },
+  {
+    "id": "abc-stories",
+    "title": "ABC Stories",
+    "subtitle": "AR Educational | May 2024",
+    "roles": "Swift Developer | Database Designer",
+    "stack": [
+      "swift",
+      "figma"
+    ],
+    "overview": "ABCStories is an iPad app that helps children learn the alphabet through interactive AR stories they can place in the real world. I collaborated with a team to completely overhaul the app, replacing a costly web-based backend with a standalone data management system. This redesign eliminated reliance on third-party hosting, saving our client approximately $1,000 per month while maintaining FERPA compliance.",
+    "contributions": [
+      "Co-developed core data collection functionality in Swift",
+      "Designed the standalone data management system, transitioning from a web-hosted backend",
+      "Collaborated on UX design to optimize local account navigation"
+    ],
+    "challenges": [
+      "Navigated my first Swift project, rapidly building proficiency in iOS development and ARKit.",
+      "Learned how to design and implement a secure, local data solution while maintaining educational functionality."
+    ],
+    "contributors": [
+      "Mae Bridgeman",
+      "Kaj Forney",
+      "Chase Franklin",
+      "Carter Jones",
+      "Mitchell Oliarny",
+      "Jayden Quallio",
+      "Carson Strout"
+    ],
+    "media": "https://www.youtube.com/embed/f6TUAltSobQ?si=Wdj2QTxRp_EDESMq",
+    "mediaCaption": "Tutorial for the ABCStories application",
+    "repo": "https://github.com/GIMMPeer/ABC-Go-AR",
+    "genre": "AR | Educational",
+    "client": "Boise State University",
+    "current": false,
+    "showBreakdown": true
+  },
+  {
+    "id": "hunter-safety-vr",
+    "title": "Fish & Game: Hunter Safety VR",
+    "subtitle": "VR Simulation | May 2025",
+    "roles": "Scenario Lead | Senior Developer",
+    "stack": [
+      "unity",
+      "csharp",
+      "trello",
+      "github-original",
+      "figma"
+    ],
+    "overview": "A VR classroom training tool developed with 13 state Fish & Wildlife departments on a six-figure budget. The application supplements hunter safety courses by letting students safely practice firearm handling and ethical decision-making in immersive scenarios.",
+    "contributions": [
+      "Led scenario design for classroom VR simulations",
+      "Co-designed a proprietary firearm handling system for safe, intuitive training",
+      "Provided post-delivery support to partner states and instructors"
+    ],
+    "challenges": [
+      "Team scaling: Coordinated with a team of 18, establishing new workflows for scalable solution development and cross-discipline communications",
+      "Timeline pressure: Delivered within the original scope despite a 5-month delayed start",
+      "User accessibility: Designed interactions simple enough for learners of a wide age range in time-limited classroom settings"
+    ],
+    "contributors": [
+      "GIMMWorks 2024–2025 team"
+    ],
+    "media": "https://www.youtube.com/embed/1kXxH0J6MfA?si=y4NukXMt-2AKSjnL",
+    "mediaCaption": "Gameplay trailer for Fish & Game: Hunter Safety VR",
+    "repo": "",
+    "genre": "VR | Simulation",
+    "client": "Fish & Wildlife Departments (13 States)",
+    "current": false,
+    "showBreakdown": true
+  },
+  {
+    "id": "firelineflyers",
+    "title": "FirelineFlyers",
+    "subtitle": "3D Networked Multiplayer | est. May 2026",
+    "roles": "Lead Developer",
+    "stack": [
+      "unrealengine-original",
+      "trello",
+      "github-original",
+      "figma"
+    ],
+    "overview": "FirelineFlyers is an ongoing indie project exploring Unreal Engine and real-time multiplayer networking. Designed as a co-op arcade experience, players team up to pilot planes and extinguish fires under time pressure. The project serves both as a technical challenge in networking and as a creative experiment in fast-paced cooperative gameplay.",
+    "contributions": [
+      "Implemented the networking framework for synchronized cooperative play",
+      "Prototyped the core gameplay loop including flight controls, firefighting mechanics, and scoring",
+      "Developed Unreal Engine workflows while transitioning from Unity",
+      "Iterating on game balance and fire behavior systems as part of ongoing development"
+    ],
+    "challenges": [
+      "Adapting to Unreal Engine after years of Unity development",
+      "Designing and testing real-time multiplayer networking from scratch",
+      "Balancing arcade gameplay scope with expanding technical systems",
+      "Maintaining project direction as features evolve during prototyping"
+    ],
+    "contributors": [],
+    "media": "img/fireline-flyers-preview.png",
+    "mediaCaption": "Generated concept imagery",
+    "repo": "",
+    "genre": "3D | Networked Multiplayer",
+    "client": "Personal",
+    "current": true,
+    "showBreakdown": true
+  },
+  {
+    "id": "kestrel",
+    "title": "BSU's Kestrel Conservation Experience",
+    "subtitle": "VR Simulation | September 2025",
+    "roles": "Project Lead | Lead Developer",
+    "stack": [
+      "unity",
+      "csharp",
+      "trello",
+      "github-original",
+      "figma"
+    ],
+    "overview": "Kestrel is a VR educational simulation developed over the course of 2 months in collaboration with the BSU Raptor Research Center and Meta. The project explores new ways to teach environmental science through fully immersive, hand-tracked interactions.",
+    "contributions": [
+      "Oversaw the development cycle and iterated on workflows and procedures",
+      "Built modular Unity systems with low-level control via Unity Events and the Inspector",
+      "Created software utilities to streamline development for both programmers and designers"
+    ],
+    "challenges": [
+      "Developing a hand-tracking only application — a first for our team",
+      "Designing tools that were both generic and accessible to unfamiliar developers",
+      "Improving documentation practices so collaborators could adopt systems quickly"
+    ],
+    "contributors": [
+      "GIMMWorks 2025"
+    ],
+    "media": "img/kestrel-preview.png",
+    "mediaCaption": "Pre-release view of gameplay environment",
+    "repo": "",
+    "genre": "VR | Educational Simulation",
+    "client": "Meta, BSU Raptor Research Center",
+    "current": false,
+    "showBreakdown": true
+  },
+  {
+    "id": "brain-health",
+    "title": "VARScent",
+    "subtitle": "VR Health Research | est. May 2026",
+    "roles": "Team Lead | Developer",
+    "stack": [
+      "unity",
+      "csharp",
+      "trello",
+      "github-original",
+      "figma",
+      "arduino-original-wordmark"
+    ],
+    "overview": "VARScent is a VR project developed with Boise State Psychology and Engineering departments. The experience pairs immersive VR environments with scent delivery to assist researchers in gathering data related to early signs of dementia. The project aims to create quick, repeatable, and intuitive tests that can be used in controlled research environments.",
+    "contributions": [
+      "Redesigning and modernizing an existing prototype to improve stability and maintainability",
+      "Implementing a single source of truth for research data to reduce duplication and errors",
+      "Streamlining communication between Unity and Arduino hardware for reliable scent delivery",
+      "Enhancing UX design to ensure tests are intuitive, repeatable, and accessible to participants"
+    ],
+    "challenges": [
+      "Integrating VR hardware with scent-based devices in a consistent and controlled way",
+      "Redesigning legacy codebases while ensuring continuity for ongoing research",
+      "Balancing research requirements with usability and technical constraints"
+    ],
+    "contributors": [
+      "Sam Lummus, Kate Hillyard, Austin Yarnot, Kaden Vissotski"
+    ],
+    "media": "img/varscent-preview.png",
+    "mediaCaption": "VARScent Demonstration, April 2023",
+    "repo": "",
+    "genre": "VR | Sensory Experience",
+    "client": "BSU Psychology, Engineering, GIMM Capstone",
+    "current": true,
+    "showBreakdown": true
+  },
+  {
+    "id": "harmony",
+    "title": "Harmony of The Spheres",
+    "subtitle": "2D Indie Puzzle | est. December 2025",
+    "roles": "Developer | Accessibility Designer",
+    "stack": [
+      "unity",
+      "csharp",
+      "trello",
+      "github-original",
+      "figma",
+      "arduino-original-wordmark"
+    ],
+    "overview": "Harmony of The Spheres is an ongoing indie local-multiplayer puzzle game designed to be fully accessible for individuals with complete colorblindness. The project combines procedural puzzle generation with a custom Arduino-powered controller to create an immersive and inclusive gameplay experience.",
+    "contributions": [
+      "Led solution design with a focus on conveying gameplay information without color cues",
+      "Developed algorithms for procedural puzzle generation to increase replayability",
+      "Designed and prototyped a custom Arduino controller for enhanced immersion",
+      "Collaborated on accessibility testing and gameplay iteration"
+    ],
+    "challenges": [
+      "Accessibility: Designing a puzzle system without using color as a mechanic required reliance on shapes, sounds, text, and haptics",
+      "Hardware: Developing a unique Arduino controller and ensuring seamless Unity integration for player input",
+      "Iteration: Balancing accessibility needs with engaging gameplay mechanics during prototyping"
+    ],
+    "contributors": [
+      "Jaden Rogers",
+      "Abbas Odhafa"
+    ],
+    "media": "img/harmony-preview.png",
+    "mediaCaption": "VFX prototype and gameplay mockup",
+    "repo": "",
+    "genre": "2D | Indie Puzzle",
+    "client": "GIMM 400 Accessible Multiplayer Project",
+    "current": true,
+    "showBreakdown": true
+  },
+  {
+    "id": "skeet-shooter",
+    "title": "Skeet Shooter VR",
+    "subtitle": "VR Sport Simulation | est. December 2025",
+    "roles": "Co-Developer | Simulation Designer",
+    "stack": [
+      "unity",
+      "csharp",
+      "trello",
+      "github-original",
+      "figma"
+    ],
+    "overview": "Skeet Shooter VR is a special topics project created for GIMM 480, developed in collaboration with Sam Lummus. The project focuses on delivering a highly realistic skeet shooting simulation that provides users with a safe and accessible way to practice the sport. Our long-term goal is to publish the game on Steam, pushing the boundaries of feasible realism in VR sports experiences.",
+    "contributions": [
+      "Co-developed the VR simulation framework alongside Sam Lummus",
+      "Designed and implemented gameplay systems that replicate skeet shooting mechanics",
+      "Experimented with interaction models to enhance immersion and realistic firearm handling",
+      "Collaborated on Steam release preparation and publishing pipeline research"
+    ],
+    "challenges": [
+      "Achieving convincing realism within the limits of available VR hardware",
+      "Balancing playability and authenticity to ensure both casual and serious players can engage",
+      "Researching and applying best practices for VR firearm handling",
+      "Preparing for the technical and logistical challenges of publishing on Steam"
+    ],
+    "contributors": [
+      "Sam Lummus"
+    ],
+    "media": "img/skeet-shooting-reference.jpg",
+    "mediaCaption": "Reference image of real skeet shooting competition",
+    "repo": "",
+    "genre": "VR | Sport Simulation",
+    "client": "GIMM 480 Special Topics",
+    "current": true,
+    "showBreakdown": false
+  }
+]

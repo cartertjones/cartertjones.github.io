@@ -16,29 +16,18 @@
         crossorigin="anonymous"></script>
 
     <link rel="preload" as="image" href="img/headshot.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark ms-auto fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ms-3 mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#contact">Contact</a>
-                </li>
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html#home"><span class="logo">CJ&nbsp;&nbsp;&nbsp;&nbsp;</span>Carter
+                Jones</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -50,35 +39,45 @@
         <div class="row d-flex align-items-center">
             <div class="col-xxl-12">
                 <div class="row">
-                    <div class="col-xxl-6 d-flex justify-content-center align-items-center pb-3">
+                    <!-- <div class="col-xxl-6 d-flex justify-content-center align-items-center pb-3">
                         <div class="img container">
                             <img src="img/headshot.png" alt="headshot" class="img-fluid" id="headshot" />
                         </div>
-                    </div>
-                    <div class="col-xxl-6 d-flex justify-content-start">
+                    </div> -->
+                    <div class="col-xxl-12 p-6 d-flex justify-content-start" id="landing">
                         <div class="row">
                             <div class="row">
                                 <div class="col-xxl-12">
-                                    <h1 class="headline">HI, I'M CARTER <br /> AND I ENJOY CRAFTING DIGITAL EXPERIENCES
-                                        THROUGH
-                                        CODE.</h1>
+                                    <h1 class="logo large">CJ</h1>
+                                    <hr class="sub-hr" />
+                                    <h1 class="headline">
+                                        BRINGING EDUCATION TO THE FUTURE<br>
+                                        <span class="highlight blue">WITH INTERACTIVE MEDIA</span>
+                                    </h1>
+                                    <hr class="sub-hr" />
                                 </div>
                             </div>
-                            <div class="row pt-4 d-flex align-items-start">
-                                <div class="col-sm-4 d-flex justify-content-center align-items-center pb-3">
-                                    <a href="index.html#about" class="btn side-button overlay">
-                                        <i class="fa fa-info-circle me-2"></i>About me
-                                    </a>
-                                </div>
-                                <div class="col-sm-4 d-flex justify-content-center align-items-center pb-3">
-                                    <a href="index.html#contact" class="btn main-button">
-                                        <i class="fa fa-users me-2"></i>Contact
-                                    </a>
-                                </div>
-                                <div class="col-sm-4 d-flex justify-content-center align-items-center">
-                                    <a href="index.html#current-projects" class="btn side-button">
-                                        <i class="fa fa-code me-2"></i>See my work
-                                    </a>
+                            <div class="row pt-4 justify-content-center">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="landing-buttons">
+                                        <!-- Col 1 -->
+                                        <a href="index.html#about" class="btn splash-button overlay">
+                                            <i class="fa fa-info-circle"></i>
+                                            <p>About Me</p>
+                                        </a>
+                                        <div class="vr"></div>
+                                        <!-- Col 2 -->
+                                        <a href="index.html#projects" class="btn splash-button">
+                                            <i class="fa fa-code"></i>
+                                            <p>My Portfolio</p>
+                                        </a>
+                                        <div class="vr"></div>
+                                        <!-- Col 3 -->
+                                        <a href="index.html#contact" class="btn splash-button">
+                                            <i class="fa fa-users"></i>
+                                            <p>Contact Me</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +86,7 @@
             </div>
         </div>
 
-        <hr id="about" />
+        <hr class="main-hr" id="about" />
 
         <div class="row d-flex align-items-center">
             <div class="col-xxl-12">
@@ -99,327 +98,83 @@
                         <div>
                             <h1>About Me</h1>
                             <br>
-                            <p>I'm an experience developer and student based in Boise, Idaho. Since 2022, I have been
-                                /working towards my bachelor's degree in <span class="highlight">Game Design,
-                                    Interactive Media, and Mobile Application
+                            <p>
+                                I'm a developer and interactive media designer based in Boise, Idaho, pursuing a
+                                bachelor's degree in
+                                <span class="highlight">Game Design, Interactive Media, and Mobile Application
                                     Development (GIMM)</span>.
-                                I'm also a competitive E-Sports player for Boise State's Varsity Overwatch team.
+                                Since 2022, I've focused on creating educational experiences that use technologies like
+                                virtual reality,
+                                augmented reality, and interactive storytelling to make learning more engaging and
+                                accessible.
                             </p>
                             <br>
-                            <p>My favorite forms of software development are web development and game development. I've
-                                been
-                                fortunate to work on a variety of projects, enabling me to learn
-                                a wide range of technologies and programming languages. I'm always eager to improve my
-                                skills and contribute to teams I am a part of.
+                            <p>
+                                My work spans from <span class="highlight blue">VR training simulations</span> to <span class="highlight blue">educational AR
+                                    apps</span>, giving me
+                                hands-on experience with a wide range of platforms and tools. I enjoy leading projects,
+                                solving complex technical
+                                challenges, and designing interactions that have a real impact on learners.
+                            </p>
+                            <br>
+                            <p>
+                                Beyond development, I compete as a professional E-Sports player for Boise State's
+                                Varsity Overwatch team,
+                                an experience that has sharpened my teamwork, communication, and high-performance
+                                mindset.
                             </p>
                             <br />
                         </div>
                     </div>
                     <div class="col-xxl-6">
                         <div class="img-container">
-                            <img loading="lazy" src="img/esports.jpg" alt="Boise State E-Sports Varsity Overwatch"
-                                class="img-fluid" />
+                            <img loading="lazy" src="img/esports-action2.jpg"
+                                alt="Boise State E-Sports Varsity Overwatch" class="img-fluid" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr id="projects" />
+        <hr class="main-hr" id="projects" />
 
         <div class="row d-flex align-items-center">
             <div class="col-xxl-12">
 
                 <!-- PROJECTS -->
-
                 <div class="row">
-                    <div class="col-xxl-12 d-flex justify-content-start">
+                    <div class="col-xxl-12 d-flex justify-content-between align-items-center">
                         <h1 class="project-header">Projects</h1>
+                        <div class="btn-group" role="group" aria-label="Project Toggle">
+                            <button id="toggle-previous" class="btn side-button active">Previous</button>
+                            <button id="toggle-current" class="btn side-button inactive">Current</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- <hr class="sub-hr" /> -->
+
                 <div class="row">
                     <div class="col-xxl-12">
                         <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel"
                             data-bs-interval="15000">
-                            <div class="carousel-indicators">
-                                <!-- Add for each new slide -->
-                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0"
-                                    class="active carousel-indicator" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
-                                    class="carousel-indicator" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"
-                                    class="carousel-indicator" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"
-                                    class="carousel-indicator" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"> <!--- SLIDE START -->
-                                    <div class="d-block slide" alt="Slide 1">
-                                        <div class="row">
-                                            <div
-                                                class="col-xxl-6 order-xxl-1 order-2 d-flex flex-column align-items-start">
-                                                <h4>Roles</h4>
-                                                <p>Project organizer | Lead Developer | Minigame Designer</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 order-xxl-2 order-1 d-flex flex-column align-items-start align-items-md-end pb-4">
-                                                <h3>Poor Dan is in a Droop</h3>
-                                                <h4 class="subheader">Digital Comic | May 2023</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-4">
-                                            <div class="col-xxl-6">
-                                                <h4>Technical Stack</h4>
-                                                <!-- TECH IMAGES HERE -->
-                                                <div class="d-flex m-2">
-                                                    <img src="img/tech/unity.svg" class="img-fluid tech-icon"
-                                                        alt="unity">
-                                                    <img src="img/tech/csharp.svg" class="img-fluid tech-icon"
-                                                        alt="csharp">
-                                                    <img src="img/tech/photoshop.svg" class="img-fluid tech-icon"
-                                                        alt="photoshop">
-                                                    <img src="img/tech/trello.svg" class="img-fluid tech-icon"
-                                                        alt="trello">
-                                                </div>
-                                                <br>
-
-                                                <h4>Overview</h4>
-                                                <p>Poor Dan is in a Droop is a semester-long collaboration between 5
-                                                    people,
-                                                    having 3 main artists and 2 main developers. We were assigned an
-                                                    unproven
-                                                    topic within quantum physics to attempt to convey through
-                                                    interactivity and
-                                                    visuals. This comic portrays the bi-directional flow of time through
-                                                    the
-                                                    life story of Dan and his mental-health struggles.</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 d-flex align-items-center justify-content-md-end justify-content-center">
-                                                <div class="embed-responsive embed-responsive-16by9">
-                                                    <iframe class="embed-responsive-item"
-                                                        src="https://www.youtube.com/embed/DCymmnwzaIw"
-                                                        title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xxl-6">
-                                                <h4>Contributors</h4>
-                                                <p>Tyler Sorensen, Patrick Olson, Austin Schuette, James Lee</p>
-                                            </div>
-                                            <div class="col-xxl-6 d-flex justify-content-center align-items-center">
-                                                <a href="https://github.com/cartertjones/PDIIAD" target="_blank"
-                                                    class="btn main-button mx-3">
-                                                    <i class="fa fa-code-branch me-3"></i>Repository
-                                                </a>
-                                                <a href="" class="btn side-button disabled">
-                                                    <!-- remove disabled once breakdown page added -->
-                                                    Breakdown<i class="ms-3 fa fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!--- SLIDE END -->
-                                <div class="carousel-item"> <!--- SLIDE START -->
-                                    <div class="d-block slide" alt="Slide 2">
-                                        <div class="row">
-                                            <div
-                                                class="col-xxl-6 order-xxl-1 order-2 d-flex flex-column align-items-start">
-                                                <h4>Roles</h4>
-                                                <p>Swift Developer | Data Management</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 order-xxl-2 order-1 d-flex flex-column align-items-start align-items-md-end pb-4">
-                                                <h3>ABC Stories</h3>
-                                                <h4 class="subheader">Educational iOS AR App Overhaul | May 2024</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-4">
-                                            <div class="col-xxl-6">
-                                                <h4>Technical Stack</h4>
-                                                <!-- TECH IMAGES HERE -->
-                                                <div class="d-flex m-2">
-                                                    <img src="img/tech/swift.svg" class="img-fluid tech-icon"
-                                                        alt="swift">
-                                                    <img src="img/tech/figma.svg" class="img-fluid tech-icon"
-                                                        alt="figma">
-                                                </div>
-                                                <br>
-
-                                                <h4>Overview</h4>
-                                                <p> As a GIMM Research Developer, I collaborated with
-                                                    colleagues to overhaul an AR app designed to teach young children
-                                                    letter writing. Initially, the app depended on a website for data
-                                                    management, incurring significant costs to comply with FERPA
-                                                    regulations. Our team redesigned the app to eliminate the need for a
-                                                    third-party
-                                                    host. This transition resulted in our client saving about $1000 per
-                                                    month.</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 d-flex align-items-center justify-content-md-end justify-content-center">
-                                                <img src="img/media-placeholder.png" class="media-placeholder" alt="media">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xxl-6">
-                                                <h4>Contributors</h4>
-                                                <p>Mae Bridgeman, Kaj Forney, Chase Franklin, Carter Jones, Mitchell
-                                                    Oliarny, Jayden Quallio, Carson Strout
-                                                </p>
-                                            </div>
-                                            <div class="col-xxl-6 d-flex justify-content-center align-items-center">
-                                                <a href="https://github.com/GIMMPeer/ABC-Go-AR" target="_blank"
-                                                    class="btn main-button mx-3">
-                                                    <i class="fa fa-code-branch me-3"></i>Repository
-                                                </a>
-                                                <a href="" class="btn side-button disabled">
-                                                    Breakdown<i class="ms-3 fa fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!--- SLIDE END -->
-                                <div class="carousel-item"> <!--- SLIDE START -->
-                                    <div class="d-block slide" alt="Slide 3">
-                                        <div class="row">
-                                            <div
-                                                class="col-xxl-6 order-xxl-1 order-2 d-flex flex-column align-items-start">
-                                                <h4>Roles</h4>
-                                                <p>C# Developer | UI</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 order-xxl-2 order-1 d-flex flex-column align-items-start align-items-md-end pb-4">
-                                                <h3>Geoscience Exhibit</h3>
-                                                <h4 class="subheader">3D Exhibit for Android | February 2024</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-4">
-                                            <div class="col-xxl-6">
-                                                <h4>Technical Stack</h4>
-                                                <!-- TECH IMAGES HERE -->
-                                                <div class="d-flex m-2">
-                                                    <img src="img/tech/unity.svg" class="img-fluid tech-icon"
-                                                        alt="unity">
-                                                    <img src="img/tech/csharp.svg" class="img-fluid tech-icon"
-                                                        alt="csharp">
-                                                    <img src="img/tech/photoshop.svg" class="img-fluid tech-icon"
-                                                        alt="photoshop">
-                                                    <img src="img/tech/trello.svg" class="img-fluid tech-icon"
-                                                        alt="trello">
-                                                </div>
-                                                <br>
-
-                                                <h4>Overview</h4>
-                                                <p> As a GIMM Research Developer, I helped develop an android unity experience for an exhibit at the 2024
-                                                    Personal Structures Exhibition in Venice, Italy. It displays
-                                                    geological drone data gathered by Boise State University's
-                                                    Human-Environment Systems department in an interactive manner.
-                                                    Exhibitors are able to immerse themselves in the environment while
-                                                    learning about invasive plant species in Idaho.</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 d-flex align-items-center justify-content-md-end justify-content-center">
-                                                <img src="img/media-placeholder.png" class="media-placeholder" alt="media">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xxl-6">
-                                                <h4>Contributors</h4>
-                                                <p>Mae Bridgeman, Kaj Forney, Chase Franklin, Carter Jones, Mitchell
-                                                    Oliarny, Jayden Quallio, Carson Strout
-                                                </p>
-                                            </div>
-                                            <div class="col-xxl-6 d-flex justify-content-center align-items-center">
-                                                <a href="https://github.com/cartertjones/geoscience-exhibit"
-                                                    target="_blank" class="btn main-button mx-3">
-                                                    <i class="fa fa-code-branch me-3"></i>Repository
-                                                </a>
-                                                <a href="" class="btn side-button disabled">
-                                                    Breakdown<i class="ms-3 fa fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!--- SLIDE END -->
-                                <div class="carousel-item"> <!--- SLIDE START -->
-                                    <div class="d-block slide" alt="Slide 3">
-                                        <div class="row">
-                                            <div
-                                                class="col-xxl-6 order-xxl-1 order-2 d-flex flex-column align-items-start">
-                                                <h4>Roles</h4>
-                                                <p>Writer | Artist | Animator</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 order-xxl-2 order-1 d-flex flex-column align-items-start align-items-md-end pb-4">
-                                                <h3>Colorblind</h3>
-                                                <h4 class="subheader">3D Animation | May 2023</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-4">
-                                            <div class="col-xxl-6">
-                                                <h4>Technical Stack</h4>
-                                                <!-- TECH IMAGES HERE -->
-                                                <div class="d-flex m-2">
-                                                    <img src="img/tech/blender.svg" class="img-fluid tech-icon"
-                                                        alt="blender">
-                                                    <img src="img/tech/photoshop.svg" class="img-fluid tech-icon"
-                                                        alt="photoshop">
-                                                </div>
-                                                <br>
-
-                                                <h4>Overview</h4>
-                                                <p> Colorblind is the result of my first attempt of 3D storytelling. I
-                                                    crafted this animation using Blender, designing both the
-                                                    environments and assets mostly from scratch. It tells a story of a
-                                                    person who gets lost in their daily routine and becomes numb to the
-                                                    beauty of the world around them.</p>
-                                            </div>
-                                            <div
-                                                class="col-xxl-6 d-flex align-items-center justify-content-md-end justify-content-center">
-                                                <div class="embed-responsive embed-responsive-16by9 ta-c">
-                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FC0gQ4b3_l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xxl-6">
-                                                <h4>Contributors</h4>
-                                                <p>None</p>
-                                            </div>
-                                            <div class="col-xxl-6 d-flex justify-content-center align-items-center">
-                                                <a href="https://github.com/cartertjones/geoscience-exhibit"
-                                                    target="_blank" class="btn main-button mx-3">
-                                                    <i class="fa fa-code-branch me-3"></i>Repository
-                                                </a>
-                                                <a href="" class="btn side-button disabled">
-                                                    Breakdown<i class="ms-3 fa fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!--- SLIDE END -->
-                            </div>
+                            <div class="carousel-indicators" id="carousel-indicators"></div>
+                            <div class="carousel-inner" id="carousel-inner"></div>
                             <div class="carousel-controls d-flex justify-content-between">
                                 <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
                                     data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                    <span class="carousel-control-prev-icon"></span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
                                     data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                    <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <hr />
+                <hr class="main-hr" />
 
                 <div class="row d-flex align-items-center">
                     <div class="col-xxl-12" id="contact">
@@ -430,11 +185,7 @@
                             <div class="col-xxl-6">
                                 <h1>Contact Me</h1>
                                 <br>
-                                <p>Interested in working together? Feel free to reach out to me via email or
-                                    LinkedIn.
-                                    I'm
-                                    always
-                                    open to new opportunities and collaborations.
+                                <p>Connect with me on LinkedIn!
                                 </p>
                             </div>
                             <div
@@ -442,9 +193,6 @@
                                 <a href="https://www.linkedin.com/in/carter-jones-49a589294/" target="_blank"
                                     class="btn main-button my-3">
                                     <i class="fab fa-linkedin-in me-2"></i> Connect on LinkedIn
-                                </a>
-                                <a href="mailto:carter.t.jones@icloud.com" target="_blank" class="btn side-button">
-                                    <i class="fa fa-envelope me-2"></i>Email
                                 </a>
                             </div>
                         </div>

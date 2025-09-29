@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 body{
     background-color: transparent !important;
 
@@ -7,6 +9,7 @@ body{
     background-attachment: fixed;
 
     color: #fff !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .content{
@@ -17,7 +20,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 
-    padding: 6rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .background-box{
@@ -30,16 +33,41 @@ body{
     text-align: center;
 }
 
+.logo{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.logo.large{
+    font-size: 14rem !important;
+}
+
 p {
     font-size: 0.9rem !important;
 }
+
+p.caption {
+    font-size:0.9rem !important;
+    color: #ddd;
+}
+
 .highlight{
     color: #ff895b;
 }
 
-hr{
+.highlight.blue{
+    color: #01c5f1;
+}
+
+.main-hr{
     border-top: 4px solid #fff !important;
     margin: 3rem 3rem !important;
+}
+
+.sub-hr{
+    border-top: 1px solid #fff !important;
+    margin: 1rem 3rem !important;
 }
 
 img{
@@ -56,6 +84,17 @@ iframe{
     height: 170px;
 }
 
+
+
+#landing {
+    min-height: 100vh;            /* fill screen */
+    display: flex;                /* enable flexbox */
+    flex-direction: column;       /* stack logo + headline vertically */
+    justify-content: center;      /* vertical centering */
+    align-items: center;          /* horizontal centering */
+    padding-top: 60px;            /* compensate for fixed navbar height */
+}
+
 #headshot {
     max-width: 600px;
     max-height: 600px;
@@ -64,10 +103,21 @@ iframe{
     height: auto;
 }
 
+.btn.splash-button {
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0);
+    color: rgba(255, 255, 255, 1);
+    padding: 0.5rem 1.5rem;
+}
+.btn.splash-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
 .btn.main-button {
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     background-color: #0191b3;
+
     color: #fff;
 }
 
@@ -78,13 +128,20 @@ iframe{
 .btn.side-button {
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
-    background-color: #00e0aa;
+    background-color: #00a57f;
 
     color: #fff;
 }
 
+.btn.side-button.active {
+    background-color: #00a57f;
+}
+.btn.side-button.inactive {
+    background-color: #007a5d;
+}
+
 .btn.side-button:hover {
-    background-color: #00ab83;
+    background-color: #007a5d;
 }
 
 .slide {
@@ -103,9 +160,6 @@ iframe{
     color: #aaa !important;
 }
 
-.fa{
-    color: #fff !important;
-}
 .carousel-indicators {
     bottom: -5px !important;
 }
@@ -119,6 +173,61 @@ iframe{
 
 .project-header{
     padding-bottom: 1rem;
+}
+
+/* Smooth hover fades */
+.btn.splash-button,
+.btn.main-button,
+.btn.side-button {
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn.fade-hover:hover {
+  opacity: 0.85;
+}
+
+/* Fade in landing on load */
+#landing {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#landing.visible {
+  opacity: 1;
+}
+
+/* Force landing buttons + dividers into one row */
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;  /* don’t wrap on small screens */
+  gap: 0.5rem;
+}
+.landing-buttons .vr {
+  height: 2rem;
+}
+
+/* Base style for toggle buttons */
+#toggle-previous,
+#toggle-current {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none !important; 
+    box-shadow: none !important;
+}
+
+/* Hover effect for both */
+#toggle-previous:hover,
+#toggle-current:hover {
+    background-color: rgba(1,145,179,0.5); /* subtle teal highlight */
+}
+
+/* Active button styling */
+#toggle-previous.active,
+#toggle-current.active {
+    background-color: #0191b3; /* brand teal */
+    color: #fff;
 }
 
 /* For desktop */
@@ -173,5 +282,10 @@ iframe{
     }
     .project-header{
         padding-bottom: 0;
+    }
+
+    #landing {
+        min-height: 100vh;
+        align-items: center;
     }
 }
